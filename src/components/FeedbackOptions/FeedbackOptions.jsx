@@ -2,10 +2,10 @@ import css from './FeedbackOptions.module.css';
 
 export const FeedbackOptions = ({ option, onLeaveFeedback }) => {
   return (
-    <ul>
+    <ul className={css.btnList}>
       {option.map(item => {
         return (
-          <li key={item}>
+          <li className={css.btnItem} key={item}>
             <button
               className={css.btn}
               type="button"
